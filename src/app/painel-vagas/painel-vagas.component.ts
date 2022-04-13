@@ -10,8 +10,9 @@ import { VagasService } from '../vagas.service';
 export class PainelVagasComponent implements OnInit {
 
   public vaga: Vaga = new Vaga(0,"","","",0);
+  public vagas: Vaga[] = [];
 
-  constructor(private_vagasService: VagasService) { }
+  constructor(private _vagasService: VagasService) { }
 
   ngOnInit(): void {
   }
